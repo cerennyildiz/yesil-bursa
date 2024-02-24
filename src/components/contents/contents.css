@@ -1,0 +1,124 @@
+.yb__content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 9rem;
+}
+
+.yb__content-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.yb__content.recycle {
+  background: #eaf3d8; /* Arka plan rengini istediğiniz renge değiştirin */
+  height: 800px;
+}
+
+.yb__content-image-recycle {
+  background: transparent; /* Resmin arka plan rengini saydam yapın */
+  max-width: 60%; /* Resimlerin maksimum genişliği */
+  height: auto;
+}
+
+.yb__content-image-left {
+  justify-content: flex-start;
+}
+.yb__content-image-right {
+  justify-content: flex-end;
+}
+
+.yb__content-image img {
+  max-width: 80%; /* Resimlerin maksimum genişliği */
+  height: auto;
+}
+
+.yb__content-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.yb__content-content h1 {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 45px;
+  margin: 4rem 0;
+}
+.gradient__text_h {
+  background: var(--gradient-text-h);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.yb__content-content p {
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 2rem;
+}
+
+.yb__content-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yb__content-btn button {
+  background: #000;
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+@media screen and (max-width: 950px) {
+  .yb__content {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .yb__content-image {
+    display: none;
+  }
+
+  .yb__content-content {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .yb__content-btn button {
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .yb__content-btn {
+    margin: 1rem 0 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .yb__content-container {
+    flex-direction: column;
+    margin-top: 12rem;
+  }
+  .yb__content-content {
+    padding: 12px;
+  }
+}

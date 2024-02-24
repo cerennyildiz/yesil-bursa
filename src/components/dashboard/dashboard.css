@@ -1,0 +1,145 @@
+.yb__dashboard {
+  width: 100vw; /* Ekran genişliği kadar genişlet */
+  height: 100vh; /* Ekran yüksekliği kadar yükseklik */
+  overflow: auto; /* İçeriği gerektiğinde kaydırmak için kaydırma çubuğu göster */
+  font-family: var(--font-family);
+}
+.yb__dashboard-container-1 {
+  display: flex;
+  flex: 1;
+}
+
+.yb__dashboard-container-1-checkboxes {
+  background-color: #679e75;
+  color: rgb(255, 255, 255);
+  padding: 10px 30px;
+  display: flex;
+  flex: 5;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  margin: 20px;
+}
+
+.yb__dashboard-container-1-button {
+  flex: 2;
+  background-color: #39a221;
+  color: white;
+  border-radius: 6px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 28px;
+  border: 2px solid #12a912;
+  cursor: pointer;
+  outline: none;
+}
+
+.yb__dashboard-checkbox-container {
+  margin-right: 10px;
+}
+
+/* Checkbox stili */
+input[type='checkbox'] {
+  display: none;
+}
+
+/* Checkbox etiketinin stili */
+input[type='checkbox'] + label {
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Checkbox işaretin stili */
+input[type='checkbox'] + label:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+}
+
+/* Checkbox işaretinin kontrol edilmiş hali */
+input[type='checkbox']:checked + label:before {
+  background-color: #333;
+}
+
+/* Checkbox işaretinin kare şekli */
+input[type='checkbox']:checked + label:before {
+  content: '\2713'; /* Unicode karakteri (✓) */
+  text-align: center;
+  line-height: 15px;
+}
+
+.yb__dashboard-main-container {
+  display: flex;
+  flex: 1;
+  gap: 20px; /* Containerlar arasında boşluk */
+}
+
+.yb__dashboard-container-2 {
+  flex: 5;
+  background-color: #f0f0f0;
+  padding: 5px;
+  border-radius: 6px;
+  margin-left: 20px;
+}
+
+.yb__dashboard-container-3 {
+  display: flex;
+  flex: 2;
+}
+
+.yb__dashboard-container-3-inner {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  gap: 10px;
+}
+
+.yb__dashboard-container-3_1 {
+  flex: 1;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+.yb__dashboard-container-3_2 {
+  flex: 4;
+  border-radius: 6px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .yb__dashboard-container-1-checkboxes {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .yb__dashboard-container-1-button {
+    margin: 20px 0;
+  }
+
+  .yb__dashboard-main-container {
+    flex-direction: column;
+  }
+
+  .yb__dashboard-container-2 {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .yb__dashboard-container-1-checkboxes {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .yb__dashboard-container-1-button {
+    font-size: 18px;
+  }
+}

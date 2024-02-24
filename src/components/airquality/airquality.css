@@ -1,0 +1,157 @@
+/*Air Quality Card */
+
+.yb__airquality-card-container h1 {
+  font-size: 20px;
+  color: #0c3a17;
+  margin-bottom: 10px;
+}
+
+.yb__airquality-card {
+  background-color: #ebeced;
+  display: flex;
+  align-items: center; /* Yatay hizalama */
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.yb__airquality-aqi {
+  border: 1px solid rgb(231, 229, 227);
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(255, 255, 255); /* Yazı rengi */
+  width: 80px; /* Kare boyutu */
+  height: 80px; /* Kare boyutu */
+  border-radius: 10px; /* Kareyi yuvarlak yap */
+  display: flex;
+  justify-content: center; /* İçeriği yatayda ortala */
+  align-items: center; /* İçeriği dikeyde ortala */
+  margin-right: 20px; /* İçerik ile arasında boşluk bırak */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.yb__airquality-info {
+  flex: 1; /* Genişliği kalan alanı kapla */
+}
+
+.yb__airquality-card h5 {
+  font-size: 24px;
+  color: #ffffff;
+}
+.yb__airquality-card p {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.yb__airquality-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.yb__airquality-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.yb__airquality-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yb__airquality-card-title {
+  margin-bottom: 10px;
+}
+
+.yb__airquality-card-subtitle {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.yb__airquality-card-text {
+  margin: 10px 0;
+}
+
+.yb__airquality-bg-success {
+  background-color: #28a745;
+}
+
+.yb__airquality-bg-warning {
+  background-color: #ffc107f9;
+}
+
+.yb__airquality-bg-orange {
+  background-color: #ff7c00;
+}
+
+.yb__airquality-bg-danger {
+  background-color: #dc3545;
+}
+
+.yb__airquality-bg-very-unhealthy {
+  background-color: #990000;
+}
+
+.yb__airquality-bg-hazardous {
+  background-color: #7e0023;
+}
+
+/*Air Quality Levels Table*/
+
+.yb__airquality-levels-card {
+  background-color: #ffffff;
+  font-family: var(font-family);
+}
+
+.yb__airquality-levels-card-title {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #333333;
+  font-weight: 800;
+}
+
+.yb__airquality-levels-card-table {
+  width: 100%;
+  margin-bottom: 0;
+  background-color: #ffffff;
+}
+
+.yb__airquality-levels-card-table th,
+.yb__airquality-levels-card-table td {
+  padding: 6px;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  font-size: 14px;
+}
+
+.yb__airquality-levels-card-table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.yb__airquality-levels-card-table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+.yb__airquality-levels-card-table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.yb__airquality-levels-card-table-bordered th,
+.yb__airquality-levels-card-table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+.yb__airquality-levels-card-table-bordered thead th,
+.yb__airquality-levels-card-table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
+.yb__airquality-levels-card-table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.yb__airquality-levels-card-table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
