@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Yesil Bursa Project 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can access it [here](https://yesil-bursa.vercel.app/).
 
-## Available Scripts
+## General Information
 
-In the project directory, you can run:
+The Green Bursa project is a software developed with the aim of raising awareness among users to adopt an environmentally friendly lifestyle and to protect nature. The project aims to encourage users to embrace a lifestyle integrated with nature by providing them with information about green areas, waste recycling facilities, local product markets, and air quality data in their vicinity.
 
-### `npm start`
+## Installation and Running Instructions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the project's GitHub repository
+2. Navigate to the cloned directory
+3. Install the necessary dependencies by running the following command:
+npm install
+4. Start the project using the following command:
+npm start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used and Data Sources
 
-### `npm test`
+**Technologies:**
+- React
+- Leaflet
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Data Sources:**
+- [Bursa Açık Veri Platformu](https://acikyesil.bursa.bel.tr/)
+- [World Air Quality Index (waqi.info)](https://waqi.info/)
